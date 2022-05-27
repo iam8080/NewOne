@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+
+    <FrameLayout
+        android:id="@+id/framelay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar1"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/civ"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/wwwggg"
+                app:civ_border_color="#0080FF"
+                app:civ_border_width="1dp" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/color1"
+            android:pointerIcon="alias"
+           app:itemTextAppearanceActive="@style/BottomNavigation.ActiveItemTextAppearance"
+            android:visibility="visible"
+            app:itemTextAppearanceInactive="@style/BottomNavigationIn.ActiveItemTextAppearance"
+            app:itemIconSize="28dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu1" />
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextAppearance="@style/BottomNavigation.ActiveItemTextAppearance"
+
+
+app:itemIconPadding="13dp"
+        app:itemVerticalPadding="15dp"
+        app:headerLayout="@layout/headerfile"
+        app:itemIconTint="#0080FF"
+        app:itemTextColor="#0080FF"
+        android:transitionGroup="true"
+        app:menu="@menu/menu2" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/Notice_Board"
+            android:title="Notice Board"
+            android:icon="@drawable/ic_campaign_black_24dp"
+            android:enabled="true"/>
+        <item android:id="@+id/Examination"
+            android:title="Examination"
+            android:icon="@drawable/ic_article_black_24dp__1_"
+            android:enabled="true"/>
+
+    <item android:id="@+id/Downloads"
+        android:title="Downloads"
+        android:icon="@drawable/ic_file_download_black_24dp"/>
+
+
+
+    <item android:id="@+id/About_Us"
+        android:title="About Us"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:enabled="true"/>
+
+    </group>
+</menu>
